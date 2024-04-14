@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="tracker mt-8">
+        <div class="flex items-center">
+            <button class="bg-gray-300 pl-1.5 pr-1.5 pb-1 ml-4">&lt</button>
+            <h1 class="text-2xl font-bold ml-14">Workout Tracker</h1>
+        </div>
+        <div class="image1">
+            <a href="schedule.html"><img src="images/tracker.png" alt="tracker"></a>
+        </div>
+        <div class="warning flex items-center rounded-md">
+            <img class="w-6 h-6 ml-4" src="images/warning.svg" alt="">
+            <p class="ml-4 break-words p-1.5">You've burned fewer calories than yesterday. Time to get moving!</p>
+        </div>
+        <div class="upcoming-workout mt-12">
+            <div class="flex justify-between mb-6">
+                <h1 class="text-lg font-bold ml-4">Upcoming Workout</h1>
+                <p class="mr-4 text-gray-500">See more</p>
+            </div>
+            <div class="flex items-center justify-between border-2 rounded-md">
+                <div>
+                    <img style="width: 80px;height: 60px;" class="" src="images/workout1.png" alt="workout1">
+                </div>
+                <div class="-ml-16">
+                    <h2>Full Body Workout</h2>
+                    <p>Today 3pm</p>
+                </div>
+                <div class="mr-4">
+                    <input type="checkbox" id="toggle1" class="toggle-checkbox hidden" />
+                    <label for="toggle1" class="toggle-label w-10 h-6 rounded-full bg-blue-400 flex items-center cursor-pointer">
+                        <div class="toggle-dot w-4 h-4 rounded-full bg-white shadow-md"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="flex items-center justify-between border-2 rounded-md">
+                <div>
+                    <img style="width: 80px;height: 60px;" class="" src="images/workout2.png" alt="workout2">
+                </div>
+                <div class="-ml-16">
+                    <h2>Upper Body Workout</h2>
+                    <p>4 Feb,3:30 pm</p>
+                </div>
+                <div class="mr-4">
+                    <input type="checkbox" id="toggle2" class="toggle-checkbox hidden" />
+                    <label for="toggle2" class="toggle-label w-10 h-6 rounded-full bg-blue-400 flex items-center cursor-pointer">
+                        <div class="toggle-dot w-4 h-4 rounded-full bg-white shadow-md"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <h1 class="text-lg font-bold ml-4 mb-4">What Do You Want to Train</h1>
+            <div class="more-workout flex justify-between bg-blue-300 rounded-md">
+                <div class="ml-4">
+                    <h2 class="text-lg">Full Body Workout</h2>
+                    <p>Arms</p>
+                    <p>Chest</p>
+                </div>
+                <div class="mr-4 mt-2 mb-2">
+                    <img src="images/workout1.png" class="rounded-full" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="navbar flex justify-between">
+            <i class="bi bi-house ml-4"></i>
+            <i class="bi bi-image"></i>
+            <i class="bi bi-search search bg-gradient-to-r from-white to-blue-500 rounded-full p-4 pl-6 pr-6"></i>
+            <i class="bi bi-camera"></i>
+            <i class="bi bi-person mr-4"></i>
+        </div>
+    </div>
+</body>
+</html>

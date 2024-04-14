@@ -1,0 +1,91 @@
+*, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    max-height: 100vh;
+}
+.flex-container {
+    display: flex;
+    justify-content: end;
+}
+.image {
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+#second-page {
+    display: none;
+}
+.register,.login,.goals {
+    margin-top: 3rem;
+}
+.register input:not([type="checkbox"]),.login input {
+    width: calc(100% - 2.5rem);
+    display: block;
+    margin: auto;
+}
+.register button,.login button,.goals button,.tracker .image1 {
+    width: calc(100% - 2.5rem);
+    display: block;
+    margin: auto;
+    margin-top: 6rem;
+}
+.login button {
+    margin-top: 17.5rem;
+}
+.goals button {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+hr {
+    display: inline-block;
+    width: calc(50% - 2rem);
+    background-color: black;
+}
+.goals {
+    overflow-x: hidden;
+}
+.goals input {
+    width: calc(100% - 2.5rem);
+    display: block;
+    margin: auto;
+}
+.tracker .image1 {
+    margin-top: 2rem;
+}
+.tracker .warning {
+    width: calc(100% - 2.5rem);
+    margin: auto;
+    margin-top: 2.5rem;
+    background-image: linear-gradient(to right,rgb(194, 229, 255),white);
+}
+#toggle1:checked + .toggle-label .toggle-dot,
+#toggle2:checked + .toggle-label .toggle-dot {
+    transform: translateX(100%);
+    transition: .5s all;
+}
+.upcoming-workout > div:not(:first-of-type) {
+    width: calc(100% - 2.5rem);
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px rgb(238, 234, 234);
+    margin-bottom: 1.5rem;
+}
+.more-workout {
+    width: calc(100% - 2.5rem);
+    margin: auto;
+}
+.navbar i {
+    font-size: 2rem;
+    display: block;
+}
+.navbar .search {
+    transform: translateY(-45px);
+}
+.add-button {
+    position: absolute;
+    bottom: 9rem;
+    right: 1rem;
+}

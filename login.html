@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="login">
+        <form>
+            <h1 class="text-2xl font-bold mb-4 ml-4">Welcome Back</h1><br>
+            <input type="email" class="max-w-lg rounded-md bg-gray-200 p-4 mb-4" placeholder="Email"><br>
+            <div class="relative">
+                <input type="password" id="password" class="rounded-md bg-gray-200 p-4 mb-4 pr-12" placeholder="Password">
+                <span class="absolute inset-y-0 right-6 px-3 py-3 bg-gray-200 cursor-pointer">
+                    <i id="eyeIcon" class="fas fa-eye-slash mr-4"></i>
+                </span>
+            </div>
+            <a href="#" class="underline text-gray-500 ml-6">Forgot your password?</a>
+            <button type="button" class="bg-blue-400 text-center rounded-lg p-4 text-white font-bold"><a href="goal.html">Sign In</a></button>
+        </form>
+        <div class="ml-8 mt-4 mb-4"><hr> <span class="m-1">Or</span> <hr></div>
+        <div class="logos flex justify-center gap-4 mb-4">
+            <div class="rounded-md border-2 border-gray-400 p-2"><img src="images/g.png" alt="g.png"></div>
+            <div class="rounded-md border-2 border-gray-400 p-2"><img src="images/f.png" alt="f.png"></div>
+        </div>
+        <div class="text-center pb-4"><a href="register.html">Don't have an account yet? <span class="text-blue-400 underline">Create an account</span></a></div>
+    </div>
+</body>
+</html>
